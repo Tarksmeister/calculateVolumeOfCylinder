@@ -29,9 +29,11 @@ public class Calculator {
         radius = keyedInput.nextDouble();
         
         volume = height * radius * radius * pi;
+        double roundOff = Math.round(volume * 100.0) / 100.0;
+
         System.out.println("\nIf the height of the cylinder is " + height + " units.");
         System.out.println("\nAnd if the radius of the cylinder is " + radius + " units.");
-        System.out.println("\nThen the volume of the cylinder is " + volume + " units cubed." ); 
+        System.out.println("\nThen the volume of the cylinder is " + roundOff + " units cubed." ); 
         System.out.println("\nPlease donate to my paypal and follow me on twitch.");
     }
     
